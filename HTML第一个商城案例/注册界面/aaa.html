@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>登录界面</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            隐藏字段:<input type="hidden" name="id" value=""><br/><br/>
+            用户名:<input type="text" name="username" maxlength="6" placeholder="请输入用户名" required="required"><br/>
+            密码  :<input type="password" placeholder="请输入密码" required="required"><br/>
+            确认密码:<input type="password" placeholder="重复密码" required="required"><br/><br/>
+            性别:<input type="radio" name="sex" value="man">男 <input type="radio" name="sex" value="female">女
+            <br/><br/>
+            爱好:<input type="checkbox" name="hobby" value="极限运动">极限运动
+                <input type="checkbox" name="hobby" value="写代码" checked="checked">写代码
+                <input type="checkbox" name="hobby" value="古玩鉴赏">古玩鉴赏
+                <input type="checkbox" name="hobby" value="打游戏">打游戏
+                <input type="checkbox" name="hobby" value="睡觉">睡觉<br/><br/>
+            头像:<input type="file" name="file"><br/><br/>
+            地址:<select name="province">
+                <option>---请选择---</option>
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="深圳">深圳</option>
+                <option value="杭州">杭州</option>
+                <option value="成都">成都</option>
+                </select><br/><br/>
+            自我介绍:<textarea>展现自己最有魅力的一面吧</textarea><br/><br/>
+            <input type="button" value="取消">    <input type="reset" value="重置">    <input type="submit" value="注册">
+        </form>
+    </body>
+</html>

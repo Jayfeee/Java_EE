@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            a{
+                text-decoration:none;
+            }
+        </style>
+    </head>
+    <body>
+    <!--创建一个八行一列的表格-->
+    <table border="0" width="1300" >
+        <!--logo部分-->
+        <tr height="80">
+            <td>
+                <table border="0" width="1300" height="60">
+                    <tr height="10">
+                        <td width="33.3%">
+                            <img width="250" height="100" src="image/京东商城.jpeg">
+                        </td>
+                        <td width="33.3%">
+                            <img align="" src="image/header.png">
+                        </td>
+                        <td width="33.3%" align="right">
+                            <font face="微软雅黑"><a href="#">登录</a></font>
+                            <font face="微软雅黑"><a href="#">注册</a></font>
+                            <font face="微软雅黑"><a href="#">帮助</a></font>
+                            <font face="微软雅黑"><a href="#">购物车</a></font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!--注册界面-->
+        <tr>
+            <td height="600" background="image/bg.jpg">
+                <form action="#" method="get" name="registerForm">
+                    <table border="1" height="500" width="60%" align="center" bgcolor="white"/>
+                        <tr height="10%">
+                            <td colspan="2">
+                                <font size="5" face="微软雅黑">会员注册   </font>
+                                <font size="2" color="gray" face="微软雅黑">USER REGISTR</font>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>用户名</td>
+                            <td>
+                                <input type="text" placeholder="请输入用户名" required="required" name="username" size="32"/>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>密码</td>
+                            <td>
+                                <input type="password" placeholder="请输入密码" required="required" name="password" size="32"/>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>确认密码</td>
+                            <td>
+                                <input type="password" placeholder="请再次输入密码" required="required" name="repassword" size="32"/>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>Email</td>
+                            <td>
+                                <input type="email" placeholder="请输入邮箱" required="required" name="email" size="32"/>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>姓名</td>
+                            <td>
+                                <input type="text" placeholder="尊姓大名" required="required" name="name" size="32"/>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>性别</td>
+                            <td>
+                                <input type="radio" name="sex" value="男"/>男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="sex" value="女"/>女
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>出生日期</td>
+                            <td>
+                                <input type="date" name="date" size="32"/>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td>验证码</td>
+                            <td>
+                                <input type="text" vlue="yzm"/>
+                                <img src="image/验证码.png"/>
+                            </td>
+                        </tr>
+                        <tr height="10%">
+                            <td colspan="2" align="center">
+                                <input type="reset" value="重置"> <input type="submit" value="注册"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+
+        <!--底栏-->
+        <tr>
+            <td align="right" >
+                <p align="center" >
+                    <img src="image/底栏.png" width="80%" height="80%" ><br/>
+                </p>
+            </td>
+        </tr>
+
+        <!--友情链接和版权信息-->
+        <tr>
+            <td align="center">
+                <p align="center">
+                    <a href="#">关于我们</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">联系客服</a>
+                    <a href="#">合作招商</a>
+                    <a href="#">商家帮助</a>
+                    <a href="#">营销中心</a>
+                    <a href="#">手机京东</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">销售联盟</a><br/>
+
+                    <font size="2">京ICP证030173号-1  京网文【2013】0934-983号  ©2018JingDong<font/>
+                </p>
+        </tr>
+
+    </table>
+    </body>
+</html>
