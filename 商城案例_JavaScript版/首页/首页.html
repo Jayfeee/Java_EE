@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <style>
+            #f{
+                border:0px solid red;
+                width:1300px;
+                height:2000px;
+                margin:auto;
+            }
+            #logo{
+                border:0px solid green;
+                height:120px;
+            }
+            .top{
+                border:0px solid blue;
+                height:100%;
+                width:431px;
+                float:left;
+            }
+            #top2{
+                padding-top:55px;
+                padding-left: 80px;
+            }
+            #top3{
+                padding-top:80px;
+                padding-left:280px;
+            }
+            #menu{
+                border:0px solid gray;
+                width:1300px;
+                height:55px;
+                background-color:black;
+                margin-bottom: 6px;
+                padding-top: 0px;
+            }
+            .z{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            ul li{
+                display: inline;
+                color:white;
+                text-align: center;
+            }
+            #img{
+                width:1300px;
+            }
+            a{
+                text-decoration:none;
+            }
+			.product{
+				border: 0px solid red;
+				width: 1300px;
+				height: 558px;
+			}
+			.product_top{
+				border: 0px solid blue;
+				width: 100%;
+				height: 45px;
+				padding-top: 8px;
+			}
+			.product_bottom{
+				border: 0px solid green;
+				width: 100%;
+				height: 500px;
+			}
+			.product_bottom_left{
+				border: 0px solid red;
+				width: 200px;
+				height: 500px;
+				float: left;
+			}
+			.product_bottom_right{
+				border: 0px solid skyblue;
+				width: 1094px;
+				height: 500px;
+				float: left;
+			}
+			.big{
+				border: 0px solid red;
+				width: 544px;
+				height: 248px;
+				float: left;
+			}
+			.small{
+				border: 0px solid blue;
+				width: 180px;
+				height: 248px;
+				float: left;
+				/*让里面的内容居中*/
+				text-align: center;
+			}
+			#bottom{
+				text-align: center;
+			}
+            #bottomFont{
+                text-align: center;
+            }
+        </style>
+        
+       <script>
+           //轮播方法
+           var x = 1;
+           function changeImg() {
+               if(x == 6){
+                   x=1;
+               }
+               x++;
+               document.getElementById("img").src = "../image/轮播图"+x+".png"
+           }
+           //定时
+           function init() {
+               setInterval("changeImg()",1000);
+               setTimeout("showAd()",3000);
+               setTimeout("hiddenAd()",8000);
+           }
+           //广告图片显示
+           function showAd() {
+               document.getElementById("adImg").style.display="block";
+           }
+           //广告图片隐藏
+           function hiddenAd() {
+               document.getElementById("adImg").style.display="none";
+           }
+       </script>
+        <!--<script src="首页.js"></script>-->
+    </head>
+    <body onload="init()">
+        <div id="f">
+            <!--弹屏广告-->
+            <img src="../image/广告.png" style="display: none" width="100%" id="adImg">
+            <!--顶层logo部分-->
+            <div id="logo">
+                <!--1-->
+                <div class="top">
+                    <img src="../image/京东商城.jpeg" height="100%">
+                </div>
+                <!--2-->
+                <div class="top">
+                    <img src="../image/header.jpg" id="top2">
+                </div>
+                <!--3-->
+                <div class="top">
+                    <p id="top3">
+                        <a href="#">登录</a>
+                        <a href="#">注册</a>
+                        <a href="#">购物车</a>
+                    </p>
+                </div>
+            </div>
+
+            <!--导航栏部分-->
+            <div id="menu">
+                <p id="ul">
+                    <ul>
+                        <a href="#"><li style="font-size:25px" class="z">首页</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#"><li style="font-size:20px" class="z">手机数码</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#"><li style="font-size:20px" class="z">潮流服饰</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#"><li style="font-size:20px" class="z">孕婴保健</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#"><li style="font-size:20px" class="z">家用电器</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#"><li style="font-size:20px" class="z">奢侈品</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </ul>
+                </p>
+            </div>
+
+            <!--轮播图-->
+            <div>
+                <a href="首页.html"><img src="../image/轮播图1.png" id="img" width="1249" height="543"></a>
+            </div>
+
+            <!--最新商品-->
+            <div class="product">
+                <div class="product_top">
+                    &nbsp;&nbsp;&nbsp;
+                    <span style="font-size: 25px;padding-top: 8px;">最新商品</span>&nbsp;&nbsp;&nbsp;
+                    <img src="../image/title2.jpg" />
+                </div>
+                <div class="product_bottom">
+                    <div class="product_bottom_left">
+                        <a href="#"><img src="../image/big01.jpg" width="100%" height="100%"/></a>
+                    </div>
+                    <div class="product_bottom_right">
+                        <div class="big">
+                            <a href="#"><img src="../image/middle01.jpg" width="100%" height="100%"/></a>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small01.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small02.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small03.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small04.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small05.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small06.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small07.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small08.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small09.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--.广告图片-->
+            <div id="">
+                <img src="../image/ad.jpg" width="100%"/>
+            </div>
+
+            <!--猜你喜欢-->
+            <div class="product">
+                <div class="product_top">
+                    &nbsp;&nbsp;&nbsp;
+                    <span style="font-size: 25px;padding-top: 8px;">猜你喜欢</span>&nbsp;&nbsp;&nbsp;
+                    <img src="../image/title2.jpg" />
+                </div>
+                <div class="product_bottom">
+                    <div class="product_bottom_left">
+                        <a href="#"><img src="../image/big01.jpg" width="100%" height="100%"/></a>
+                    </div>
+                    <div class="product_bottom_right">
+                        <div class="big">
+                            <a href="#"><img src="../image/middle01.jpg" width="100%" height="100%"/></a>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small01.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small02.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small03.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small04.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small05.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small06.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small07.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small08.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                        <div class="small">
+                            <a href="#"><img src="../image/small09.jpg" /></a>
+                            <a href="#"><p style="color: gray;">电炖锅</p></a>
+                            <p style="color: red;">¥399</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                <img src="../image/底栏.png" width="80%" height="80%" ><br/>
+            </div>
+            <div id="bottomFont">
+                <!--友情链接和版权信息-->
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">联系客服</a>
+                <a href="#">合作招商</a>
+                <a href="#">商家帮助</a>
+                <a href="#">营销中心</a>
+                <a href="#">手机京东</a>
+                <a href="#">友情链接</a>
+                <a href="#">销售联盟</a><br/>
+                <font size="2">京ICP证030173号-1  京网文【2013】0934-983号  ©2018JingDong<font/>
+            </div>
+        </div>
+    </body>
+</html>

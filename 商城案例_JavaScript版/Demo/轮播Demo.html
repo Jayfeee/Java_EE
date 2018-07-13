@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+        <style>
+            div{
+                border: 4px solid #4ccd9c;
+                width: 1000px;
+                height: 550px;
+                margin: auto;
+                text-align: center;
+            }
+        </style>
+        <script>
+            var x = 1;
+            function changeImg() {
+                x++;
+                if(x == 6){
+                    x=1;
+                }
+                document.getElementById("img").src = "image/轮播图"+x+".png";
+            }
+            function init() {
+                setInterval("changeImg()",1000);
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <div>
+            <img src="../image/轮播图1.png" align="center" width="100%" height="550" id="img"><br/><br/><br/><br/>
+            <input type="button" value="下一张" align="center" onclick="changeImg()">
+        </div>
+    </body>
+</html>
